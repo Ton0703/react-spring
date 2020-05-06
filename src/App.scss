@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .content{
+    position: relative;
+    width: 320px;
+    user-select: none;
+  
+    div{
+      position: absolute;
+      width: 320px;
+      height: 90px;
+      padding-left: 40px;
+      background-color: lightblue;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      pointer-events: auto;
+      line-height: 90px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      cursor: pointer;
+      will-change: opacity transform;
+
+      &:nth-child(1){
+        background-color: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+      }
+      &:nth-child(2){
+        background-color: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      }
+      &:nth-child(3){
+        background-color: linear-gradient(135deg, #5ee7df 0%, #b490ca 100%);
+      }
+      &:nth-child(4){
+        background-color: linear-gradient(135deg, #c3cfe2 0%, #c3cfe2 100%);
+      }
+     }
+  }
+}
+
